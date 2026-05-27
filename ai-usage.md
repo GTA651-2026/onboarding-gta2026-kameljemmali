@@ -10,43 +10,33 @@
 
 ## 1. Outil utilisé
 
-Outil : __
-Version / date d'accès : __
-
-*(Si plusieurs outils, dupliquez cette section.)*
-
----
+Outil : ChatGPT
+Version / date d’accès : Mai 2026
 
 ## 2. Ce qu'il m'a aidé à faire
 
-*(Tâche précise — ex. : « structurer la section ROI », pas : « écrire le travail ».)*
-
+Comprendre les concepts du cours
+Structurer la grille comparative
+Reformuler certaines explications
+Organiser les recommandations
 __
 
 ---
 
 ## 3. Sources et chiffres que j'ai vérifiés moi-même
 
-*(Pour chaque affirmation ou chiffre fourni par l'IA → source primaire consultée.)*
-
-- __
-- __
-
----
+Slides GTA651 Session 02
+Guide de studio GTA651
+Documentation Microsoft Copilot
+Documentation Salesforce Einstein
 
 ## 4. Ce que j'ai modifié ou rejeté
 
-*(Ce que l'IA a proposé mais que vous avez changé, corrigé ou écarté — et pourquoi.)*
-
-- __
-- __
-
----
+J’ai reformulé plusieurs recommandations pour les adapter au contexte québécois.
+J’ai simplifié certaines explications techniques afin de garder un style plus clair et académique.
 
 ## 5. Déclaration de responsabilité
+Je déclare que le contenu final reflète mon jugement personnel. Je suis responsable de l’exactitude, de la pertinence et du raisonnement.
 
-Je déclare que le contenu final reflète mon jugement personnel. Je suis responsable
-de l'exactitude, de la pertinence et du raisonnement — outil IA utilisé ou non.
-
-Nom : __
-Date : __
+Nom : Kamel Jemmali
+Date : 26 Mai 2026
