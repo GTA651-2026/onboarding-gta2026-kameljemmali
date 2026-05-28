@@ -1,6 +1,6 @@
 # Rétroaction automatisée -- S02 (Sélectionner des solutions IA : décision, opérations, productivité)
 
-_Générée le 2026-05-26T14:32:33+00:00 -- Run `20260526T140803Z-ec457158`_
+_Générée le 2026-05-28T17:52:02+00:00 -- Run `20260528T172647Z-afdf4262`_
 
 Ce document est produit par un pipeline reproductible (vérification SQL déterministe + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
 
@@ -13,57 +13,57 @@ La vérification automatique n'a pas pu être réalisée (gate non applicable (t
 
 ## 2. Rétroaction pédagogique sur le brief
 
-> Le livrable est un canevas d'exercice mais ne contient pas d'analyse ni de recommandation concrète : il ne répond donc pas à la question décisionnelle. Pour progresser, complétez les tableaux par contexte, fournissez des justifications chiffrées et joignez preuves et commits permettant la validation et la reproduction.
+> Le livrable contient la structure attendue (grille et sections de contexte) mais est essentiellement un gabarit non rempli; aucune analyse ni justification n'est fournie. Remplissez les contextes, complétez la grille avec scores et justifications factuelles, nommez les rôles métiers et ajoutez des recommandations différenciées et un ai-usage.md.
 
 ### Observations par dimension
 
-**Model quality**
-- Observation : Le document est un canevas de grille à remplir plutôt qu'un schéma ou modèle répondant à la question CEO (pas de choix ni de justification finalisée).
-- Piste d'amélioration : Remplir la grille pour chaque contexte avec un schéma décisionnel clair (grain : périmètre du rôle, mesures d'impact, dimensions : parties prenantes et systèmes) et justifier le pattern choisi.
+**Contexte organisationnel**
+- Observation : Le document contient des sections vides pour «Décrivez brièvement la PME» et la grande entreprise, sans aucun détail chiffré sur taille, secteur ou budget.
+- Piste d'amélioration : Remplir les descriptions des deux contextes avec secteur, taille précise, maturité numérique et budget IA estimé pour permettre une différenciation PME vs grande entreprise.
 
-**Validation quality**
-- Observation : Aucune requête de validation, aucun check reproductible ou résultat chiffré n'est fourni dans le brief (seulement des instructions).
-- Piste d'amélioration : Fournir au moins une vérification chiffrée (tableau récapitulatif, métrique d'impact) et un script ou capture montrant les contrôles (NULLs, agrégations) exécutés.
+**Justification criteres**
+- Observation : La grille de comparaison est présente mais toutes les cellules sont vides; aucun score ni justification n'est fourni pour les cinq critères.
+- Piste d'amélioration : Attribuer des scores pour chaque critère et ajouter une justification factuelle ou une hypothèse vérifiable pour chaque cellule (données chiffrées, sources, ou description d'intégration).
 
-**Executive justification**
-- Observation : Le texte est un template demandant une recommandation mais ne contient pas de recommandation ni d'argument décisionnel adressé au CEO.
-- Piste d'amélioration : Rédiger un brief exécutif de 150–300 mots qui indique la recommandation par contexte, l'impact attendu et l'appel à action précis pour le board.
+**Role specialise identifie**
+- Observation : La ligne «Rôle spécialisé orchestré» existe dans la grille mais reste vide pour les trois agents dans les deux contextes.
+- Piste d'amélioration : Nommer pour chaque agent le rôle métier précis qu'il remplace/augmente (ex. «agent de décision — priorisation des opportunités commerciales») et illustrer par un exemple métier.
 
-**Process trace**
-- Observation : La checklist exige la mise à jour de `ai-usage.md` et le dépôt PDF, mais il n'y a pas d'historique de commits ni de note IA détaillée fournie.
-- Piste d'amélioration : Inclure un log de commits (≥3 commits incrémentaux) et une note IA décrivant l'outil, l'usage et la validation humaine effectuée.
+**Recommandation argumentee**
+- Observation : Les sections «Recommandation pour la PME» et «Recommandation pour la grande entreprise» sont laissées vides, sans position ni argumentation.
+- Piste d'amélioration : Formuler une recommandation distincte par contexte en expliquant pourquoi une option est retenue et pourquoi les autres sont écartées, en s'appuyant sur la grille.
 
-**Reproducibility**
-- Observation : Aucun artefact exécutable ou instructions reproductibles ne sont fournis — seulement une demande d'export PDF et dépôt de fichier.
-- Piste d'amélioration : Ajouter un README avec étapes claires pour reproduire la grille (fichiers sources, commandes, chemins relatifs) et un script d'export automatisé.
+**Ai disclosure**
+- Observation : Le brief demande de mettre à jour ai-usage.md mais aucun fichier ou déclaration d'usage d'IA n'est fourni dans le document soumis.
+- Piste d'amélioration : Ajouter un fichier ai-usage.md décrivant les outils (ou «aucun»), l'étape d'utilisation, la validation humaine et les limites observées.
 
 ## 3. Déclaration d'utilisation de l'IA
 
-> Le fichier fourni est essentiellement le gabarit non rempli : les sections demandées restent vides. Veuillez compléter chaque rubrique avec des informations précises (outil + version, étape d'utilisation, validation humaine, limites observées).
+> La déclaration indique l'outil utilisé et décrit les tâches aidées, et l'étudiant signale avoir vérifié des sources et pris la responsabilité du résultat. Il manque toutefois une mention explicite des limites ou des erreurs observées issues de l'usage de l'IA.
 
-**Sujets à ajouter ou expliciter pour la prochaine itération :**
+**Sujets bien couverts dans votre déclaration :**
 
 - outils utilisés (nom + version/modèle)
 - à quelle étape l'IA a été utilisée
 - comment la sortie a été validée par l'humain
+
+**Sujets à ajouter ou expliciter pour la prochaine itération :**
+
 - limites ou erreurs observées
 
 ## 4. Pistes d'action pour la prochaine itération
 
-- Compléter `ai-usage.md` en y ajoutant : outils utilisés (nom + version/modèle).
-- Compléter `ai-usage.md` en y ajoutant : à quelle étape l'IA a été utilisée.
-- Compléter `ai-usage.md` en y ajoutant : comment la sortie a été validée par l'humain.
 - Compléter `ai-usage.md` en y ajoutant : limites ou erreurs observées.
 
 ---
 
 ## 5. Traçabilité
 
-- **Run ID :** `20260526T140803Z-ec457158`
+- **Run ID :** `20260528T172647Z-afdf4262`
 - **Devoir :** `S02`
 - **Étudiant·e :** `kameljemmali`
-- **Commit analysé :** `e10d955`
-- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260526T140803Z-ec457158/kameljemmali/`
+- **Commit analysé :** `171309b`
+- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T172647Z-afdf4262/kameljemmali/`
 - **Prompts (SHA-256) :**
   - `rubric_grader_system` : `505f32d1d8319d66...`
   - `ai_usage_grader_system` : `81cb7fdf89bda55a...`
